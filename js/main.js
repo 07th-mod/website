@@ -1219,7 +1219,7 @@ License: https://themeforest.net/licenses/standard
 			}
 		};
 
-		initPhotoSwipeFromDOM('.portfolio-gallery');
+		// initPhotoSwipeFromDOM('.portfolio-gallery');
 		
 	}
 		
