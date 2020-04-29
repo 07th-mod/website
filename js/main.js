@@ -20,8 +20,8 @@ License: https://themeforest.net/licenses/standard
 		sectionOnMenu = $('div.right-side section.on-menu'),
 		rightSide = $('div.right-side'),
 		preloader = $('#preloader'),
-		preloaderDelay = 350,
-		preloaderFadeOutTime = 800,
+		preloaderDelay = 0,
+		preloaderFadeOutTime = 300,
 		btnLoadContent = $('a.load-content'),
 		countdown = $('.countdown[data-countdown]');
 	
