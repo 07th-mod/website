@@ -1,33 +1,28 @@
 /*
- * jQuery FlexSlider v2.6.3
+ * jQuery FlexSlider v2.3.0
  * http://www.woothemes.com/flexslider/
  *
  * Copyright 2012 WooThemes
- * Free to use under the GPLv2 and later license.
+ * Free to use under the GPLv2 license.
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
- * Contributing author: Tyler Smith (@mbmufffin)
- *
+ * Contributing author: Ville Ristimäki (@villeristi)
+ * 
  */
 /* ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
-@font-face {
-  font-family: 'flexslider-icon';
-  src: url('fonts/flexslider-icon.eot');
-  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
 .flex-container a:hover,
-.flex-slider a:hover {
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
   outline: none;
 }
 .slides,
-.slides > li,
 .flex-control-nav,
 .flex-direction-nav {
   margin: 0;
@@ -89,10 +84,6 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides {
   zoom: 1;
 }
-.flexslider .slides img {
-  height: auto;
-  -moz-user-select: none;
-}
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -135,8 +126,6 @@ html[xmlns] .flexslider .slides {
   font-size: 40px;
   display: inline-block;
   content: '\f001';
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
@@ -166,7 +155,6 @@ html[xmlns] .flexslider .slides {
   opacity: 0!important;
   filter: alpha(opacity=0);
   cursor: default;
-  z-index: -1;
 }
 .flex-pauseplay a {
   display: block;
@@ -190,7 +178,7 @@ html[xmlns] .flexslider .slides {
 .flex-pauseplay a:hover {
   opacity: 1;
 }
-.flex-pauseplay a.flex-play:before {
+.flex-pauseplay a .flex-play:before {
   content: '\f003';
 }
 .flex-control-nav {
@@ -242,11 +230,9 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-thumbs img {
   width: 100%;
-  height: auto;
   display: block;
   opacity: .7;
   cursor: pointer;
-  -moz-user-select: none;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
