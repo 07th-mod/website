@@ -3670,7 +3670,8 @@ img {
 .cover .align-top {
   padding: 0 32px;
 }
-@media all and (max-width: 767px) {
+/* Commented out to prevent bad layout on mobile when website has no content besides landing page*/
+/* @media all and (max-width: 767px) {
   .cover .align-bottom {
     padding: 0 15px;
   }
@@ -3694,7 +3695,7 @@ img {
     height: auto;
     padding: 80px 0;
   }
-}
+} */
 /*!---------- 26. SHOP ----------*/
 .product-single .image-slider .label {
   font-size: 12px;
