@@ -1,0 +1,3033 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://07th-mod.com/Umineko/Umineko-Part-0-TroubleShooting-and-FAQ/">
+      
+      
+        <link rel="prev" href="../Umineko-Part-1.1---Voices-only-Patch/">
+      
+      
+        <link rel="next" href="../support/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>5. FAQ/Troubleshooting - 07th-Mod - User Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-umineko-faq" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="07th-Mod - User Wiki" class="md-header__button md-logo" aria-label="07th-Mod - User Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            07th-Mod - User Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5. FAQ/Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/07th-mod" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    07th-Mod (Organization)
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="07th-Mod - User Wiki" class="md-nav__button md-logo" aria-label="07th-Mod - User Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    07th-Mod - User Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/07th-mod" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    07th-Mod (Organization)
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    <b>Higurashi</b>
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <b>Higurashi</b>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/Higurashi-Getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/Higurashi-Part-1---Voice-and-Graphics-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2a. Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/Manual-Installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2b. Manual Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/Higurashi-Part-2---Patch-configuration-and-keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2c. Shortcuts and Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/Higurashi-Part-1.1---Voices-only-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Voices-only Patch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/FAQ-linux-steam-deck/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4a. Linux & Steam Deck FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/BGM-SE-FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4b. BGM/SE FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/MiotsukushiFAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4c. Miotsukushi FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Getting Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Higurashi/Uninstall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Uninstalling Mod & Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    <b>Umineko</b>
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            <b>Umineko</b>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Umineko-Getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Intro (START HERE)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Umineko-Mod-Options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Mod Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Umineko-Part-3a-Cross-Platform-Installer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3a. Cross-Platform Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Umineko-Part-1---Voice-and-Graphics-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3b. Manual Voice and Graphics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Umineko-Part-1.1---Voices-only-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3c. Manual Voices-only
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5. FAQ/Troubleshooting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5. FAQ/Troubleshooting
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-if-my-issue-is-not-listed-below" class="md-nav__link">
+    <span class="md-ellipsis">
+      What if my issue is not listed below?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game-crashes-freeze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Crashes / Freeze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-game-has-poor-performance-or-stutter-on-text-and-menus-even-on-high-end-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      The game has poor performance or stutter (on text and menus), even on high end systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mod-menu-question-arcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mod Menu - Question Arcs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-game-window-is-too-smalltoo-large" class="md-nav__link">
+    <span class="md-ellipsis">
+      The game window is too small/too large
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-game-window-size-is-reset-when-the-game-starts" class="md-nav__link">
+    <span class="md-ellipsis">
+      The game window size is reset when the game starts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fullscreen-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fullscreen doesn't work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#does-umineko-have-feature-x-from-the-higurashi-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Does Umineko have feature X from the Higurashi mod?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-crashes-when-saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Crashes when saving
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steam-updated-and-now-my-saves-are-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steam updated and now my saves are missing!
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-saves-are-all-brokenshifted-backwardsforwards-in-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      My saves are all broken/shifted backwards/forwards in the game!
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-game-script-found-error-when-launching-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      'No game script found' error when launching the game
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-want-to-play-with-the-original-spritesryukishi-spritesadv-mode-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      I want to play with the original sprites/ryukishi sprites/adv mode etc.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacosx-game-stops-on-black-or-beach-screen-when-launching-game-without-steam-failed-loading-libpng12so0-or-other-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux/MacOSX - Game stops on black or beach screen when launching game without Steam - Failed loading libpng12.so.0 or other libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacosx-i-cant-launch-the-game-no-execute-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux/MacOSX - I can't launch the game (No Execute Permissions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mangagamer-macos-i-get-a-missing-game-data-no-game-script-found-error-even-on-the-base-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      MangaGamer + MacOS - I get a "Missing Game Data: No game script found..." error (Even on the base game)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gameplay-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gameplay Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gameplay Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs-dont-work-correctly-or-the-game-constantly-skips-controller-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inputs don't work correctly, or the game constantly skips / Controller Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inputs don't work correctly, or the game constantly skips / Controller Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#often-used-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Often used controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less-used-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Less used controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-probably-dont-want-to-press-these" class="md-nav__link">
+    <span class="md-ellipsis">
+      You probably don't want to press these
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-does-not-play-through-my-headset-or-other-device-but-other-gamesprograms-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio does not play through my headset (or other device), but other games/programs do
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suddenly-all-my-soundaudiovoicesmusic-has-stopped-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suddenly all my sound/audio/voices/music has stopped working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-voices-at-the-start-of-the-question-arcs-have-some-minor-distortion" class="md-nav__link">
+    <span class="md-ellipsis">
+      The voices at the start of the Question Arcs have some minor distortion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-advances-too-slowlyquickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text advances too slowly/quickly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sometimes-voices-dont-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sometimes voices don't play
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam-sync-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steam Sync doesn't work!
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-make-the-game-launch-in-fullscreen-automatically" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I make the game launch in fullscreen automatically
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-save-files-have-disappeared-or-changed-unexpectedly" class="md-nav__link">
+    <span class="md-ellipsis">
+      My save files have disappeared or changed unexpectedly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ive-finished-the-game-but-some-steam-achievements-are-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      I've finished the game, but some Steam achievements are missing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-sound-on-linux-game-doesnt-even-show-up-in-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      No sound on Linux (game doesn't even show up in mixer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-episode-credits-just-display-a-black-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      The episode credits just display a black screen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Getting Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Uninstall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Uninstalling Mod & Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    <b>Installer</b>
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            <b>Installer</b>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Installer/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Installer/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Getting support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Installer/power-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power User Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Donations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support and Reporting Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Beginners-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribution Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Higurashi Developer Information
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Higurashi Developer Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/overview/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/overview/features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparing a New Chapter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/overview/patch-folder-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Patch Folder Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/patch-compiler/how-to-use-higurashi-patch-compiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Higurashi Patch Compiler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Game Scripting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Game Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/scripting/on-scripting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scripting Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/scripting/syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Syntax Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/scripting/bgm-se-scripting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BGM & SE Scripting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_4" id="__nav_10_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Translation Work
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_4">
+            <span class="md-nav__icon md-icon"></span>
+            Translation Work
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/translation/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/translation/resources-and-guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources and Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/translation/console-exclusive-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Console Exclusive Content
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/translation/censorship-script-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Censorship / Script Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_5" id="__nav_10_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Graphical Work
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_5">
+            <span class="md-nav__icon md-icon"></span>
+            Graphical Work
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/graphics/psd-files-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSD Files, Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/graphics/resources-technical-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources, Technical Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/graphics/sunset-night-filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sunset/Night Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/graphics/mangagamer-sprite-edits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mangagamer Sprite Edits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/graphics/background-image-panning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background/Image Panning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UI Editing Scripts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_6">
+            <span class="md-nav__icon md-icon"></span>
+            UI Editing Scripts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/sharedassets/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/sharedassets/ui-editing-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_7" id="__nav_10_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Voices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_7">
+            <span class="md-nav__icon md-icon"></span>
+            Voices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/voice/voice-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Voice Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/voice/automated-voice-inserter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automated Voice Inserter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/voice/manual-work-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual Work Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_8" id="__nav_10_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DLL Modding
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_8">
+            <span class="md-nav__icon md-icon"></span>
+            DLL Modding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/dll/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/dll/modded-engine-flags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modded engine flags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_9" id="__nav_10_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_9">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/misc/git-line-endings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git Line Endings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_10" id="__nav_10_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_10">
+            <span class="md-nav__icon md-icon"></span>
+            Installer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/installer/install-data-json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    installData.json
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_11" id="__nav_10_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Legacy Pages (out of date)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_11">
+            <span class="md-nav__icon md-icon"></span>
+            Legacy Pages (out of date)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/legacy/code-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Batch File Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/legacy/technical-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Advanced Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/legacy/adv-mode-and-lipsync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adv Mode and Lipsync
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-if-my-issue-is-not-listed-below" class="md-nav__link">
+    <span class="md-ellipsis">
+      What if my issue is not listed below?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game-crashes-freeze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Crashes / Freeze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-game-has-poor-performance-or-stutter-on-text-and-menus-even-on-high-end-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      The game has poor performance or stutter (on text and menus), even on high end systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mod-menu-question-arcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mod Menu - Question Arcs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-game-window-is-too-smalltoo-large" class="md-nav__link">
+    <span class="md-ellipsis">
+      The game window is too small/too large
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-game-window-size-is-reset-when-the-game-starts" class="md-nav__link">
+    <span class="md-ellipsis">
+      The game window size is reset when the game starts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fullscreen-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fullscreen doesn't work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#does-umineko-have-feature-x-from-the-higurashi-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Does Umineko have feature X from the Higurashi mod?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-crashes-when-saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Crashes when saving
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steam-updated-and-now-my-saves-are-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steam updated and now my saves are missing!
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-saves-are-all-brokenshifted-backwardsforwards-in-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      My saves are all broken/shifted backwards/forwards in the game!
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-game-script-found-error-when-launching-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      'No game script found' error when launching the game
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-want-to-play-with-the-original-spritesryukishi-spritesadv-mode-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      I want to play with the original sprites/ryukishi sprites/adv mode etc.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacosx-game-stops-on-black-or-beach-screen-when-launching-game-without-steam-failed-loading-libpng12so0-or-other-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux/MacOSX - Game stops on black or beach screen when launching game without Steam - Failed loading libpng12.so.0 or other libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacosx-i-cant-launch-the-game-no-execute-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux/MacOSX - I can't launch the game (No Execute Permissions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mangagamer-macos-i-get-a-missing-game-data-no-game-script-found-error-even-on-the-base-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      MangaGamer + MacOS - I get a "Missing Game Data: No game script found..." error (Even on the base game)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gameplay-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gameplay Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gameplay Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs-dont-work-correctly-or-the-game-constantly-skips-controller-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inputs don't work correctly, or the game constantly skips / Controller Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inputs don't work correctly, or the game constantly skips / Controller Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#often-used-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Often used controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less-used-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Less used controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-probably-dont-want-to-press-these" class="md-nav__link">
+    <span class="md-ellipsis">
+      You probably don't want to press these
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-does-not-play-through-my-headset-or-other-device-but-other-gamesprograms-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio does not play through my headset (or other device), but other games/programs do
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suddenly-all-my-soundaudiovoicesmusic-has-stopped-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suddenly all my sound/audio/voices/music has stopped working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-voices-at-the-start-of-the-question-arcs-have-some-minor-distortion" class="md-nav__link">
+    <span class="md-ellipsis">
+      The voices at the start of the Question Arcs have some minor distortion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-advances-too-slowlyquickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text advances too slowly/quickly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sometimes-voices-dont-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sometimes voices don't play
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam-sync-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steam Sync doesn't work!
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-make-the-game-launch-in-fullscreen-automatically" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I make the game launch in fullscreen automatically
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-save-files-have-disappeared-or-changed-unexpectedly" class="md-nav__link">
+    <span class="md-ellipsis">
+      My save files have disappeared or changed unexpectedly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ive-finished-the-game-but-some-steam-achievements-are-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      I've finished the game, but some Steam achievements are missing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-sound-on-linux-game-doesnt-even-show-up-in-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      No sound on Linux (game doesn't even show up in mixer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-episode-credits-just-display-a-black-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      The episode credits just display a black screen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="5-umineko-faq">5. Umineko FAQ<a class="headerlink" href="#5-umineko-faq" title="Permanent link">&para;</a></h1>
+<p>Welcome to the Umineko FAQ. You can find your question using the <strong>instant search bar</strong> at the top of the screen, or the <strong>Table of Contents</strong> on the right.</p>
+<h2 id="what-if-my-issue-is-not-listed-below">What if my issue is not listed below?<a class="headerlink" href="#what-if-my-issue-is-not-listed-below" title="Permanent link">&para;</a></h2>
+<p>Please proceed to <a href="../support/">Umineko Support</a>.</p>
+<h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h2>
+<h3 id="game-crashes-freeze">Game Crashes / Freeze<a class="headerlink" href="#game-crashes-freeze" title="Permanent link">&para;</a></h3>
+<p>The engine is known to crash or freeze under certain conditions:</p>
+<ul>
+<li>during skip mode, the game can freeze (get stuck)</li>
+<li>can hard crash randomly ("This program has stopped working...")</li>
+<li>can hard crash at specific points of the game (for example:<ul>
+<li>in the Question just before a scene at the festival</li>
+</ul>
+</li>
+<li>when using the Special K mod framework - please make sure this is disabled</li>
+</ul>
+<p>If you repeatedly get crashes at a certain point of the game, you can try to do the following (not guaranteed to work):</p>
+<ul>
+<li>create a save as close as possible to the crash</li>
+<li>restart your computer (to try to cause different memory conditions for the game)</li>
+<li>load the save repeatedly and try to get past the crash:<ul>
+<li>try using skip mode (hold CTRL)</li>
+<li>try restarting your computer periodically if you still can't get past it</li>
+</ul>
+</li>
+</ul>
+<p>These crashes can happen on the unmodded game too, but it's possible the increased resolution/graphics cause the crashes to happen more often.</p>
+<h3 id="the-game-has-poor-performance-or-stutter-on-text-and-menus-even-on-high-end-systems">The game has poor performance or stutter (on text and menus), even on high end systems<a class="headerlink" href="#the-game-has-poor-performance-or-stutter-on-text-and-menus-even-on-high-end-systems" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://steamcommunity.com/app/406550/discussions/0/2569816316385480858/?tscn=1604006973">As reported on the steam forums</a>:<ul>
+<li>This issue happens on some Nvidia systems</li>
+<li>The stuttering happens <strong>when you move the mouse</strong></li>
+<li>The stuttering issue happens even even on the base game</li>
+</ul>
+</li>
+<li>
+<p>To solve this issue (as a workaround) use just the keyboard or a controller to play the game, rather than your mouse</p>
+</li>
+<li>
+<p>We've also had a report that having a PS4 controller plugged in can cause this issue - try unplugging any controllers you have and see if it fixes the issue.</p>
+</li>
+<li>
+<p>More generally, if the issue randomly started happening, please try to remember if you installed any drivers, software, or hardware (including USB headphones, input peripherals like controllers, monitors etc.) recently. Try reverting the change you made or removing the devices and see if the issue is fixed.</p>
+</li>
+<li>
+<p><strong>You will need a good CPU and OK-ish GPU to run the mod</strong> - the requirements are higher than the base game!:</p>
+</li>
+<li>You probably cannot run the mod on an old netbook or old laptop, even if the base game runs fine on older hardware. The game relies heavily on CPU for rendering.</li>
+<li>We have <a href="https://docs.google.com/spreadsheets/d/14LnB5Q0R3_X3ZgXDcbASIJbrIGzU3gXWB-kxBkC1YTM/edit?usp=sharing">a table of hardware which has been tested with the mod</a>, to give you some idea of what works and doesn't work.</li>
+<li>The game also seems to perform worse as your screen resolution increases (especially on integrated graphics). You can test this by playing in windowed mode, and reducing the window size - the performance should improve. If this is your problem, try reducing your desktop resolution to 1080p (the resolution the game runs at).</li>
+<li>Having many programs running in the background can also affect performance, especially on low end systems. Please close other programs (including your browser) before running the game.</li>
+</ul>
+<details class="example">
+<summary>Old info on the performance issue</summary>
+<p>We're currently investigating some reports of poor performance, especially on the Umineko Answer arcs.</p>
+<p>Please note that the Umineko game engine heavily relies on single threaded CPU performance. This may mean that, even if you have a great GPU, an older CPU may cause you to lag or drop frames. On very underpowered machines (like netbooks with Atom processors, or old laptops), performance won't be very good - we recommend using a different machine to play if possible.</p>
+<p>Having many programs running in the background can also affect performance, especially on low end systems. Please close other programs (including your browser) before running the game.</p>
+<p>The game also seems to perform worse as your screen resolution increases (especially on integrated graphics). You can test this by playing in windowed mode, and reducing the window size - the performance should improve. If this is your problem, try reducing your desktop resolution to 1080p (the resolution the game runs at).</p>
+<p>We have had a couple reports of high end systems having performance problems - we are currently investigating this issue.</p>
+</details>
+<h3 id="mod-menu-question-arcs">Mod Menu - Question Arcs<a class="headerlink" href="#mod-menu-question-arcs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Changing any ADV related setting will clear the text currently on the screen. You can still view the cleared text on the backlog.</li>
+<li>There are certain parts of the game which are always displayed in NVL mode (text over the whole screen). If you enable ADV mode during these sections, the ADV textbox won't appear until the NVL section ends.</li>
+</ul>
+<h3 id="the-game-window-is-too-smalltoo-large">The game window is too small/too large<a class="headerlink" href="#the-game-window-is-too-smalltoo-large" title="Permanent link">&para;</a></h3>
+<p>In the main arcs, as well as Umineko Saku, you may freely resize the window by dragging its borders. In Umineko Tsubasa and Hane, however, this doesn't work, as they run on an older version of the game engine that didn't have this feature implemented yet. You may open the <code>ons.cfg</code> file with any text editor (e.g. Notepad), and edit the line that says <code>window-width=1280</code> to include a different value. The minimum value is <code>640</code>, for a resolution of 640x480. There is no known maximum.</p>
+<h3 id="the-game-window-size-is-reset-when-the-game-starts">The game window size is reset when the game starts<a class="headerlink" href="#the-game-window-size-is-reset-when-the-game-starts" title="Permanent link">&para;</a></h3>
+<p>The newer Umineko games currently don't remember the size or position of the window once you close the game. As a workaround on Windows, you can use this AutoHotkey script to resize the currently active window:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">; Press &quot;alt + r&quot; to resize the current window when this script is active</span>
+<span class="c1">; https://www.autohotkey.com/docs/commands/WinMove.htm</span>
+
+<span class="c1">; Change the variables below to set the window position when you press &quot;alt + r&quot;</span>
+<span class="n">x</span> <span class="o">:=</span> <span class="mi">200</span><span class="c1"> ; X position of the window (top left corner of window)</span>
+<span class="n">y</span> <span class="o">:=</span> <span class="mi">200</span><span class="c1"> ; Y position of the window (top left corner of window)</span>
+<span class="n">width</span> <span class="o">:=</span> <span class="mi">1280</span><span class="c1"> ; Width of the window</span>
+<span class="n">height</span> <span class="o">:=</span> <span class="mi">720</span><span class="c1"> ; Height of the window</span>
+
+<span class="c1">; !r means ALT + r - change to change the hotkey to activate the window resize</span>
+<span class="c1">; # - Win; ! - Alt; ^ - Ctrl; + - Shift</span>
+<span class="o">!</span><span class="n">r</span><span class="o">::</span>
+    <span class="nb">WinMove</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="p">,</span> <span class="nv">%x%</span><span class="p">,</span> <span class="nv">%y%</span><span class="p">,</span> <span class="nv">%width%</span><span class="p">,</span> <span class="nv">%height%</span>
+    <span class="nb">return</span>
+</code></pre></div>
+<h3 id="fullscreen-doesnt-work">Fullscreen doesn't work<a class="headerlink" href="#fullscreen-doesnt-work" title="Permanent link">&para;</a></h3>
+<p>For some strange reason, fullscreen only seems to work when the game window already fits on your screen normally. If the window is currently too large for your screen, pressing the F key to toggle fullscreen will do nothing. Use one of the above methods to resize the window to fit your screen first, and then try to switch into fullscreen.</p>
+<h3 id="general-problems">General Problems<a class="headerlink" href="#general-problems" title="Permanent link">&para;</a></h3>
+<ul>
+<li>You can navigate the menu with directional arrow keys on the Question arcs, but not on the Answer arcs. To fix this, you <em>can</em> copy the Umineko Question .exe into the Answer Arcs and run it instead, BUT this may silently break things in the Answer arcs - do so at your own risk.</li>
+</ul>
+<h3 id="does-umineko-have-feature-x-from-the-higurashi-mod">Does Umineko have feature X from the Higurashi mod?<a class="headerlink" href="#does-umineko-have-feature-x-from-the-higurashi-mod" title="Permanent link">&para;</a></h3>
+<p>Please do not expect the same mod features as the Higurashi mod, as Umineko runs on an entirely different engine to Higurashi. <a href="../Umineko-Getting-started/#higurashi-mod-feature-comparison">Please see the "Higurashi Mod Feature Comparison"</a>.</p>
+<h3 id="game-crashes-when-saving">Game Crashes when saving<a class="headerlink" href="#game-crashes-when-saving" title="Permanent link">&para;</a></h3>
+<p>Try running the game as Administrator to check if you have permission issues when making saves.</p>
+<p>If this fixes the issue, consider moving the game folder to another place you have write access to (outside of Program Files).</p>
+<p>You might also want to try running the game with steam completely closed, by double clicking on the .exe.</p>
+<h2 id="install-problems">Install Problems<a class="headerlink" href="#install-problems" title="Permanent link">&para;</a></h2>
+<h4 id="steam-updated-and-now-my-saves-are-missing">Steam updated and now my saves are missing!<a class="headerlink" href="#steam-updated-and-now-my-saves-are-missing" title="Permanent link">&para;</a></h4>
+<p>Rename your folder <code>saves</code> to <code>mysav</code>, this should restore your progress when using the new executable.</p>
+<h4 id="my-saves-are-all-brokenshifted-backwardsforwards-in-the-game">My saves are all broken/shifted backwards/forwards in the game!<a class="headerlink" href="#my-saves-are-all-brokenshifted-backwardsforwards-in-the-game" title="Permanent link">&para;</a></h4>
+<p>The following can cause your saves to break:</p>
+<ul>
+<li>Updating to a new script. If you need to update, finish a chapter first before updating the script.</li>
+<li>Transferring your game from Windows 7 to Windows 10 (Or between operating systems)</li>
+<li>Editing the script file, and adding/removing lines (editing existing lines is OK)</li>
+<li>Steam updates (see above FAQ)</li>
+</ul>
+<p>The game does feature a 'subchapter select' menu for each chapter, allowing you to skip to a certain point in the chapter. However it is only unlocked once you complete the chapter, so is not useful unless you are replaying the game.</p>
+<p>Note that your chapter unlock status should always be maintained, unless you delete your global save file.</p>
+<h4 id="no-game-script-found-error-when-launching-the-game">'No game script found' error when launching the game<a class="headerlink" href="#no-game-script-found-error-when-launching-the-game" title="Permanent link">&para;</a></h4>
+<p>You forgot to rename the script file <code>0.utf</code> to <code>0.u</code> (located in the root game directory)</p>
+<h4 id="i-want-to-play-with-the-original-spritesryukishi-spritesadv-mode-etc">I want to play with the original sprites/ryukishi sprites/adv mode etc.<a class="headerlink" href="#i-want-to-play-with-the-original-spritesryukishi-spritesadv-mode-etc" title="Permanent link">&para;</a></h4>
+<p>See the <a href="../Umineko-Mod-Options/">Mod Options</a> page.</p>
+<h4 id="linuxmacosx-game-stops-on-black-or-beach-screen-when-launching-game-without-steam-failed-loading-libpng12so0-or-other-libraries">Linux/MacOSX - Game stops on black or beach screen when launching game without Steam - <code>Failed loading libpng12.so.0</code> or other libraries<a class="headerlink" href="#linuxmacosx-game-stops-on-black-or-beach-screen-when-launching-game-without-steam-failed-loading-libpng12so0-or-other-libraries" title="Permanent link">&para;</a></h4>
+<p>This problem happens even on the base game when you launch the game without Steam. Note that launching the game through Steam (if you have the Steam version) might fix this issue, as Steam will provide the missing libraries.</p>
+<p>To fix this issue, download and extract this archive to the game directory (it should overwrite the <code>lib64</code> folder): <a href="https://07th-mod.com/Beato/linux-libpng-libjpeg.7z">https://07th-mod.com/Beato/linux-libpng-libjpeg.7z</a></p>
+<p>The alternative way to fix this issue is to make sure Steam is installed, then run the game through Steam (not by clicking on the .exe).</p>
+<h4 id="linuxmacosx-i-cant-launch-the-game-no-execute-permissions">Linux/MacOSX - I can't launch the game (No Execute Permissions)<a class="headerlink" href="#linuxmacosx-i-cant-launch-the-game-no-execute-permissions" title="Permanent link">&para;</a></h4>
+<p>You may need to do <code>chmod +x Umineko1to4</code> or <code>chmod +x Umineko5to8</code> to give execute permissions if your executable doesn't launch.</p>
+<h4 id="mangagamer-macos-i-get-a-missing-game-data-no-game-script-found-error-even-on-the-base-game">MangaGamer + MacOS - I get a "Missing Game Data: No game script found..." error (Even on the base game)<a class="headerlink" href="#mangagamer-macos-i-get-a-missing-game-data-no-game-script-found-error-even-on-the-base-game" title="Permanent link">&para;</a></h4>
+<p>MangaGamer's MacOS version of the game is packaged as a zip file. On MacOS, if you unzip the game and run it where you unzipped it, MacOS will run the application in a sandbox, and in the sandbox it can't find the game script (the <code>0.utf</code> (stock) or <code>0.u</code> (modded) script file). This results in the <code>No game script found</code> error.</p>
+<p>To fix this issue with the stock game:</p>
+<ol>
+<li>Extract the zip file as normal, which should produce the extracted game folder</li>
+<li>Copy the extracted game folder to another location on your computer</li>
+<li>Try running the game - if it still doesn't work:<ol>
+<li>Delete the <code>.app</code> file in the copy of the game folder</li>
+<li>Copy the <code>.app</code> file from the extracted folder to the copy of the game folder</li>
+</ol>
+</li>
+</ol>
+<p>You can proceed to install the mod once you've got this working.</p>
+<details class="info">
+<summary>Detailed Information</summary>
+<p>Due to a previous security issue with downloaded zip files bypassing app signing checks, MacOS puts apps in a sandbox if they are left in the same directory where they were unzipped, which prevents them from accessing other files in the same directory as themselves (rather than within the .app folder). This is disabled if you move the application after unzipping it.</p>
+<p>The security issue is that you could take a codesigned application that accessed folders with relative paths, and put it into a zip file with unsigned stuff that matched those paths, and they wouldn't be checked for codesigning but would be able to execute.</p>
+</details>
+<h2 id="gameplay-problems">Gameplay Problems<a class="headerlink" href="#gameplay-problems" title="Permanent link">&para;</a></h2>
+<h4 id="inputs-dont-work-correctly-or-the-game-constantly-skips-controller-support">Inputs don't work correctly, or the game constantly skips / Controller Support<a class="headerlink" href="#inputs-dont-work-correctly-or-the-game-constantly-skips-controller-support" title="Permanent link">&para;</a></h4>
+<p>If you have this problem, try unplugging any controllers you have connected to the computer, and use only the mouse and keyboard to play.</p>
+<p>The game actually has controller support, even though it's not advertised.</p>
+<p>The main issue is that, if a controller is plugged in, it will always be active, even if you're using the mouse and keyboard. The default keybinding for "skip" is right trigger, which is easy to hold down by putting the controller down or having a sticky right trigger - if this happens and you don't realize it, the game will constantly skip.</p>
+<p>Here is a list of the controls (on a generic controller):</p>
+<h5 id="often-used-controls">Often used controls<a class="headerlink" href="#often-used-controls" title="Permanent link">&para;</a></h5>
+<ul>
+<li>"a" - Equivalent to pressing the "Esc" key on your keyboard, use to exit menus</li>
+<li>"y" - Right click (open/close game menu)</li>
+<li>"b" - Left click</li>
+<li>"up/down on the dpad/left thumbstick" - Up and Down only are used to navigate the menus. <strong>Don't try to use left and right</strong> as it doesn't actually move to the left or right item, and can cause the menu to close (see below).</li>
+</ul>
+<h5 id="less-used-controls">Less used controls<a class="headerlink" href="#less-used-controls" title="Permanent link">&para;</a></h5>
+<ul>
+<li>"left/right on the dpad/left thumbstick" - Equivalent to mousewheel up and down, used for accessing the backlog, but can also cause you to exit menus.</li>
+<li>"start" - Enter Autoplay Mode</li>
+<li>"right trigger/right button" - Enter Skip mode</li>
+</ul>
+<h5 id="you-probably-dont-want-to-press-these">You probably don't want to press these<a class="headerlink" href="#you-probably-dont-want-to-press-these" title="Permanent link">&para;</a></h5>
+<ul>
+<li>"back/select" - Cycles the text speed between low, medium, and high</li>
+<li>"up/right on the right thumbstick" - Enter Autoplay Mode</li>
+<li>"down/left on the right thumbstick" - Exit Autoplay Mode</li>
+<li>other buttons - I couldn't figure out if any of the other buttons do anything.</li>
+</ul>
+<h4 id="audio-does-not-play-through-my-headset-or-other-device-but-other-gamesprograms-do">Audio does not play through my headset (or other device), but other games/programs do<a class="headerlink" href="#audio-does-not-play-through-my-headset-or-other-device-but-other-gamesprograms-do" title="Permanent link">&para;</a></h4>
+<p>Umineko decides which device to play audio on on startup. It won't change to a new device if you plug it in or switch devices while the game is running.</p>
+<p>Please select the audio device before starting the game. You may also want to try restarting your computer with your chosen device plugged in, then starting the game.</p>
+<h4 id="suddenly-all-my-soundaudiovoicesmusic-has-stopped-working">Suddenly all my sound/audio/voices/music has stopped working<a class="headerlink" href="#suddenly-all-my-soundaudiovoicesmusic-has-stopped-working" title="Permanent link">&para;</a></h4>
+<p>In this game engine, pressing 'm' on your keyboard, or the "Select" equivalent on your gamepad, mutes all sound - you probably pressed this by accident. Press that button again to unmute.</p>
+<h4 id="the-voices-at-the-start-of-the-question-arcs-have-some-minor-distortion">The voices at the start of the Question Arcs have some minor distortion<a class="headerlink" href="#the-voices-at-the-start-of-the-question-arcs-have-some-minor-distortion" title="Permanent link">&para;</a></h4>
+<p>This seems to be inherent to the audio files of the PS3 game (either when they were recorded, or during mixdown). However the quality seems to improve as you progress through the game - it's mainly during the start of Episode 1 when it is noticeable.</p>
+<h4 id="text-advances-too-slowlyquickly">Text advances too slowly/quickly<a class="headerlink" href="#text-advances-too-slowlyquickly" title="Permanent link">&para;</a></h4>
+<p>Press the 1 (slow), 2 (normal), or 3 (fast) keys while the game is not animating text to change the text speed. The full list of controls can be viewed by pressing the "Controls" button on the main menu.</p>
+<h4 id="sometimes-voices-dont-play">Sometimes voices don't play<a class="headerlink" href="#sometimes-voices-dont-play" title="Permanent link">&para;</a></h4>
+<p>The game has some issues with playing back voice files, depending on the timing of when you click to advance (if you click just before a voice stops playing, it may cancel the next voice line being played). We don't really know of a solution to this problem, as it happens pretty randomly.</p>
+<p>That said, if you find there is some spoken dialogue which <strong>never plays a voice</strong>, and seems like it should, please tell us so we can fix it up. Just make sure it's reproducible by playing through that line a couple times.</p>
+<h4 id="steam-sync-doesnt-work">Steam Sync doesn't work!<a class="headerlink" href="#steam-sync-doesnt-work" title="Permanent link">&para;</a></h4>
+<p>Previously we had some issues with steam updating the game and loading 'patched' saves into the 'unpatched' script, which could potentially skip you forward in the game. To prevent this, we hid the save folder from Steam, as <code>mysav</code>. Unfortunately, this also breaks Steam Sync.</p>
+<p>If you want to re-enable steam sync, you can do the following:
+- rename the <code>saves</code> folder to <code>saves_old</code> (if it exists)
+- double click <code>EnableSteamSync.bat</code> (if you don't have it, <a href="https://github.com/07th-mod/resources/raw/master/umineko-question/utilities/EnableSteamSync.bat">download this and rename it as a .bat file</a>)
+- if successful, you should see a shortcut called <code>saves</code> appear in the game folder (might need to refresh the folder). If you double click it, you will see the contents of the <code>mysav</code> folder. This tricks steam into syncing the mysav folder.</p>
+<p>Please note that even if you move the game folder, in certain cases your save files might still go into <code>...\Steam\steamapps\common\Umineko\mysav</code>, no matter where you place the game folder. See below section "My save files have disappeared or changed unexpectedly" for more details.</p>
+<h4 id="how-do-i-make-the-game-launch-in-fullscreen-automatically">How do I make the game launch in fullscreen automatically<a class="headerlink" href="#how-do-i-make-the-game-launch-in-fullscreen-automatically" title="Permanent link">&para;</a></h4>
+<p>Launch the game with the <code>--fullscreen</code> option. You can do this by creating a shortcut, then changing the 'Target' to <code>"path\to\game\Umineko1to4.exe" --fullscreen</code></p>
+<h4 id="my-save-files-have-disappeared-or-changed-unexpectedly">My save files have disappeared or changed unexpectedly<a class="headerlink" href="#my-save-files-have-disappeared-or-changed-unexpectedly" title="Permanent link">&para;</a></h4>
+<p>If you have the Steam version of Umineko, and you move or copy the game outside of the default folder, <strong>the save folder location will change if Steam is not running</strong>:</p>
+<ul>
+<li>If <strong>steam is not running</strong>, the (modded) game will use the <code>mysav</code> folder next to the game executable</li>
+<li>If <strong>steam is running</strong>, and maybe only for the Answer arcs, the (modded) game will use the <code>mysav</code> folder <strong>located wherever steam thinks it's installed</strong>. Probably this is your <code>Steam/steamapps/common/[Umineko/Umineko Chiru]/mysav</code> folder</li>
+</ul>
+<p>Please be aware of this if you want to move the game. Steamless/MangaGamer versions of the game probably are unaffected by this.</p>
+<p>Also to note is that the base game will save to the <code>saves</code> folder, and the modded game will save to the <code>mysav</code> folder. But please note that <strong>the base and modded game saves are not compatible!</strong></p>
+<h4 id="ive-finished-the-game-but-some-steam-achievements-are-missing">I've finished the game, but some Steam achievements are missing<a class="headerlink" href="#ive-finished-the-game-but-some-steam-achievements-are-missing" title="Permanent link">&para;</a></h4>
+<p>Firstly, try restarting Steam, as it sometimes doesn't properly show achievements until restarted.</p>
+<p>If you do not have steam running, the game will not register achievements. If you think you've wrongly missed an achievement, don't worry - once you've finished the game,  we've added a button on the Mod Menu to forcibly unlock all achievements (right click while in-game, then click "Options", then "Unlock All Achievements").</p>
+<p>There is also one achievement for the Question Arcs which is difficult to unlock, "Trumpet Blues". I suggest googling it if that is the one you are missing.</p>
+<h4 id="no-sound-on-linux-game-doesnt-even-show-up-in-mixer">No sound on Linux (game doesn't even show up in mixer)<a class="headerlink" href="#no-sound-on-linux-game-doesnt-even-show-up-in-mixer" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Firstly, check if you pressed the 'm' key (or 'Select' key on controller), which mutes the game. Deleting your save files also disables muting, see <a href="../Uninstall/">Uninstalling Umineko and the Mod</a></li>
+<li>On Linux, if Umineko doesn't show up in your audio mixer at all, try following this <a href="https://www.gamingonlinux.com/articles/steam-for-linux-can-now-run-games-in-a-special-container.15384">gamingonlinux tutorial</a> to run Umineko using the Steam Linux Runtime compatability tool.</li>
+</ul>
+<p>Steam Deck Users have reported the following:</p>
+<ul>
+<li>See the <a href="../../Higurashi/FAQ-linux-steam-deck/#steam-deck-no-audio-at-all">Higurashi FAQ regarding Steam Deck Sound Issues</a></li>
+<li>One user reported that doing a clean install fixed the "no audio" issue. Follow the instructions here to fully uninstall the game and mod: <a href="../Uninstall/">Uninstalling Umineko and the Mod</a></li>
+<li>One user reported that the Steam Deck + GOG version of the game had no sound, even on the unmodded game. This was fixed by going into the "lib64" folder and deleting every file except for "libsteam_api.so".</li>
+</ul>
+<h4 id="the-episode-credits-just-display-a-black-screen">The episode credits just display a black screen<a class="headerlink" href="#the-episode-credits-just-display-a-black-screen" title="Permanent link">&para;</a></h4>
+<p>If the credits play music, but only shows a black screen, it's probably due to you using an (old) integrated graphics card.</p>
+<p>We think this is because the 1080p credits images are too large for some computers to support, so the engine just does not display them at all.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      All Nipahs Reserved
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

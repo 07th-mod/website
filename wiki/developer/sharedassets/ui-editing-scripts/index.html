@@ -1,0 +1,2417 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://07th-mod.com/developer/sharedassets/ui-editing-scripts/">
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../../voice/voice-details/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Usage - 07th-Mod - User Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="07th-Mod - User Wiki" class="md-header__button md-logo" aria-label="07th-Mod - User Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            07th-Mod - User Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Usage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/07th-mod" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    07th-Mod (Organization)
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="07th-Mod - User Wiki" class="md-nav__button md-logo" aria-label="07th-Mod - User Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    07th-Mod - User Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/07th-mod" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    07th-Mod (Organization)
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    <b>Higurashi</b>
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <b>Higurashi</b>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/Higurashi-Getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/Higurashi-Part-1---Voice-and-Graphics-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2a. Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/Manual-Installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2b. Manual Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/Higurashi-Part-2---Patch-configuration-and-keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2c. Shortcuts and Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/Higurashi-Part-1.1---Voices-only-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Voices-only Patch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/FAQ-linux-steam-deck/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4a. Linux & Steam Deck FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/BGM-SE-FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4b. BGM/SE FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/MiotsukushiFAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4c. Miotsukushi FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Getting Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Higurashi/Uninstall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Uninstalling Mod & Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    <b>Umineko</b>
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            <b>Umineko</b>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Umineko-Getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Intro (START HERE)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Umineko-Mod-Options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Mod Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Umineko-Part-3a-Cross-Platform-Installer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3a. Cross-Platform Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Umineko-Part-1---Voice-and-Graphics-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3b. Manual Voice and Graphics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Umineko-Part-1.1---Voices-only-Patch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3c. Manual Voices-only
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Umineko-Part-0-TroubleShooting-and-FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. FAQ/Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Getting Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Umineko/Uninstall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Uninstalling Mod & Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    <b>Installer</b>
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            <b>Installer</b>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Installer/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Installer/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Getting support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Installer/power-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power User Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Donations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support and Reporting Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Beginners-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribution Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Higurashi Developer Information
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Higurashi Developer Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparing a New Chapter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/patch-folder-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Patch Folder Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patch-compiler/how-to-use-higurashi-patch-compiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Higurashi Patch Compiler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Game Scripting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Game Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/on-scripting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scripting Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Syntax Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/bgm-se-scripting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BGM & SE Scripting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_4" id="__nav_10_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Translation Work
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_4">
+            <span class="md-nav__icon md-icon"></span>
+            Translation Work
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translation/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translation/resources-and-guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources and Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translation/console-exclusive-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Console Exclusive Content
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translation/censorship-script-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Censorship / Script Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_5" id="__nav_10_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Graphical Work
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_5">
+            <span class="md-nav__icon md-icon"></span>
+            Graphical Work
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/psd-files-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSD Files, Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/resources-technical-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources, Technical Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/sunset-night-filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sunset/Night Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/mangagamer-sprite-edits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mangagamer Sprite Edits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/background-image-panning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background/Image Panning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UI Editing Scripts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10_6">
+            <span class="md-nav__icon md-icon"></span>
+            UI Editing Scripts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-decrunch-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation - decrunch error
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_7" id="__nav_10_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Voices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_7">
+            <span class="md-nav__icon md-icon"></span>
+            Voices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voice/voice-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Voice Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voice/automated-voice-inserter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automated Voice Inserter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voice/manual-work-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual Work Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_8" id="__nav_10_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DLL Modding
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_8">
+            <span class="md-nav__icon md-icon"></span>
+            DLL Modding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dll/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dll/modded-engine-flags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modded engine flags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_9" id="__nav_10_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_9">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/git-line-endings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git Line Endings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_10" id="__nav_10_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_10">
+            <span class="md-nav__icon md-icon"></span>
+            Installer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installer/install-data-json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    installData.json
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_11" id="__nav_10_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Legacy Pages (out of date)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_11">
+            <span class="md-nav__icon md-icon"></span>
+            Legacy Pages (out of date)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legacy/code-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Batch File Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legacy/technical-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Advanced Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legacy/adv-mode-and-lipsync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adv Mode and Lipsync
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-decrunch-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation - decrunch error
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<p>Written by <a href="https://github.com/tellowkrinkle/">@tellowkrinkle</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Old Information on this page</p>
+<p>We used to have lots of different scripts you would setup and run to update the <code>sharedasssets0.assets</code>. Now we have a monolithic <code>build.py</code> script which does everything at once - you just have to edit the various files in the <code>assets</code> folder before you run it. Please keep that in mind when reading this page as this wiki may not have been fully updated yet.</p>
+</div>
+<p>These <a href="https://github.com/07th-mod/ui-editing-scripts/tree/master/scripts">scripts</a> can be used to easily update the <code>sharedassets0.assets</code> file in Higurashi games. This can save a lot of clicking in UABE and string edits were not even possible without these scripts.</p>
+<p>Note: All scripts require Python 3, you may need to replace calls to <code>pip</code> and <code>python</code> with <code>pip3</code> and <code>python3</code> if that's what they are on your computer.</p>
+<p>There is also another <a href="https://github.com/07th-mod/ui-editing-scripts/blob/master/README.md">tool</a> written in Rust which can simplify the process even more and you might not even need to read all the details below.</p>
+<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">build.py users</p>
+<p>If using the <code>build.py</code>, dependencies will be installed automatically. Use a virtual environment if you do not want packages installed globally.</p>
+</div>
+<p>Before using these scripts, run the following command to install the dependencies.</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<h2 id="installation-decrunch-error">Installation - <code>decrunch</code> error<a class="headerlink" href="#installation-decrunch-error" title="Permanent link">&para;</a></h2>
+<p>This should no longer occur if you use the above <code>requirements.txt</code> to install dependencies, but I've kept the old text below for reference.</p>
+<p>UnityPack has dependency on something called <code>decrunch</code> which requires Visual C++ Build Tools 14.0 (on Windows) but can still fail to install even if you have them. We're not using the part that needs <code>decrunch</code> (it's only used to decompress certain formats of image assets) anyway so if you run into these issues, simply download <a href="https://github.com/drojf/UnityPack">this fork</a> of unitypack where the dependency is removed and install if with <code>python setup.py install</code> from within its folder.</p>
+<h1 id="unitytextmodifier">UnityTextModifier<a class="headerlink" href="#unitytextmodifier" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">build.py users</p>
+<p>This will be run automatically when <code>build.py</code> is run. Just make sure you've edited the <code>ui-editing-scripts\assets\text-edits.json</code>file.</p>
+</div>
+<p>This script will allow you to edit text files embedded in the asset files of games. This includes most UI elements.</p>
+<p>UnityTextModifier.py requires three arguments, the <code>.assets</code> file that contains the text you want to edit, a JSON file listing the edits you want to make, and an output directory where the edits will be outputted.  The JSON file should be formatted as an array of objects with the fields <code>CurrentEnglish</code>, <code>CurrentJapanese</code>, <code>NewEnglish</code>, and <code>NewJapanese</code>.</p>
+<p>There's also an optional <code>Discriminator</code> field, which shouldn't be used unless the script finds multiple copies of your string in the file. The script will give a message like <code>Multiple assets found for ON / ON, candidates are 0: 0x6031370, 1: 0x6038090 ...</code>, then you can add a line like <code>Discriminator: 0</code> to a block in your JSON file like the below example.</p>
+<p>Here's an example JSON file:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;CurrentEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Original&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CurrentJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;オリジナル&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PS3&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PS3&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;CurrentEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Updated&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CurrentJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;新規&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MangaGamer&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MangaGamer&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;CurrentEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Watanagashi 12-3&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CurrentJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;綿流し編　１２日目３&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Watanagashi Day 12-3&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;綿流し編　１２日目３&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;CurrentEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ON&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CurrentJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;全て&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Вкл&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;全て&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Discriminator&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;CurrentEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ON&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CurrentJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ON&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewEnglish&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Вкл&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NewJapanese&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ON&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Discriminator&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>Run the program with <code>python UnityTextModifier.py sharedassets0.assets changes.json outputFolder</code>
+The program will then output one ###.dat file per change into the specified output folder, where the ### is the object ID of the file that it should replace in the assets bundle.  These can be used directly with <code>EMIPGenerator.py</code> or manually added in using UABE.</p>
+<h1 id="emipgenerator">EMIPGenerator<a class="headerlink" href="#emipgenerator" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">build.py users</p>
+<p>This will be run automatically when <code>build.py</code> is run. Just make sure you've edited/added files to the <code>ui-editing-scripts\assets</code> folder.</p>
+</div>
+<p>This script will allow you to collect large numbers of asset bundle modifications into one large file that can be applied in one step using UABE.</p>
+<p>EMIPGenerator requires three arguments, the <code>.assets</code> file that you want to edit, a directory of edits to make, and the name of the output file (should have the extension <code>.emip</code> or UABE won't let you load it).</p>
+<p>The edit directory will be read as follows:</p>
+<ul>
+<li>Files that start with a number will replace the object with that number in the assets folder.  For example, <code>2345.dat</code> will replace object number 2345.  <code>2345 Some helpful note as to what this file is.dat</code> will also replace object number 2345.  Files outputted by UnityTextModifier will be named properly to get picked up by this mode.</li>
+<li>Files that don't start with a number but are in the format <code>name_type.dat</code> will replace the first item in the bundle that has that name and type (for example, <code>ConfigHigurashi_Texture2D.dat</code> will replace the first item named <code>ConfigHigurashi</code> that is a <code>Texture2D</code>.  Note that due to issues with UnityPack misreading files, the application uses a very messy way of searching files and therefore may not properly work with all file types in this mode.  The first time you try to add a file in this mode, make sure the program doesn't print <code>Couldn't find object named &lt;name&gt; for &lt;filename&gt;, skipping</code>, which indicates that the script failed to find an object to replace.  If this happens, manually look up the ID and prepend it to the file.</li>
+<li>Files that end in <code>.png</code> will be converted to <code>Texture2D</code> assets before they are inserted into the EMIP.</li>
+<li>Any file that does not start with a number or have an underscore in its name will be completely ignored</li>
+<li>Any file that does have an underscore in its name but doesn't match a file in the asset bundle will still be ignored but may cause the program to run slower (due to searching the whole bundle for a matching file)</li>
+</ul>
+<p>Run the program with <code>python EMIPGenerator.py sharedassets0.assets inputFolder output.emip</code>.  Then, launch UABE and select <code>File → Load Package File</code> and select your emip file.  If you get the error <code>Unable to read the bundle file! (Invalid file or unknown version?)</code>, this means that you accidentally selected <code>File → Open</code> instead of <code>File → Load Package File</code>.  Check the box next to the asset file on the following screen and if it doesn't show the full path to the file (starting with <code>C:</code> or whatever drive letter it's in), click the button near the bottom to select a base folder that will get the correct path.  Then click <code>OK</code>, which will load the main bundle editing interface with all the edits already in.  From here you can immediately select <code>File → Save</code> and save the output asset bundle.</p>
+<h3 id="uabe-screenshots">UABE Screenshots<a class="headerlink" href="#uabe-screenshots" title="Permanent link">&para;</a></h3>
+<p>Select <code>File → Load Package File</code> and select your <code>.emip</code> file
+<img alt="Load Package File" src="../images/LoadPackageFile.png" />
+Check the box and add a base folder if needed, then press OK
+<img alt="Select a base folder" src="../images/LoadPackageStep2.png" />
+Save the new bundle
+<img alt="Save the new bundle" src="../images/SaveOutputBundle.png" /></p>
+<h1 id="tmpassetconverter">TMPAssetConverter<a class="headerlink" href="#tmpassetconverter" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Rei and Hou Plus</p>
+<p>This method does not work for Rei (Ch.9) or Hou Plus (Ch.10). See below section on "Adding Font Support for a New Language" below.</p>
+</div>
+<p>This script converts assets outputted by the current version of TextMeshPro into ones that can be read by the version used by the games.  Note that if TextMeshPro updates it may stop working.  </p>
+<p>To use this, you will first need to generate a text atlas using TextMeshPro.  Newer versions of Unity will output assets in a different format, so you will need an older one.  <code>5.5.5</code> is known to work, while <code>2018.2</code> is known to not work.  Due the python library having issues reading the assets outputted by TextMeshPro, you will need to then use UABE to extract the Atlas (Texture2D) and MonoBehaviour files from the asset, using the <code>Export Raw</code> button.  If your version of Unity was too new, you'll find out here as UABE will fail to open the asset file.</p>
+<p>You'll also need the MonoBehaviour file that you're trying to replace extracted from the game's asset bundle. The MonoBehaviour files contain pointers to other files in the assets so you can't reuse a file extracted from one chapter. For example if you want to replace the <code>msgothic_0</code> font, use <code>Export Raw</code> on the <code>msgothic_0 SDF</code> file and save it as <code>oldMonoBehaviour.dat</code>:</p>
+<p><img alt="mono" src="https://user-images.githubusercontent.com/539462/45201903-59aa8580-b277-11e8-969b-414e1376f570.png" /></p>
+<p>Then, run <code>python TMPAssetConverter.py newAtlas.dat newMonoBehaviour.dat oldMonoBehaviour.dat outputFolder</code> and the converter will create two files in the output folder with the same name as the two input files.  These can be substituted back into the asset bundle.  The atlas file can be left out if you don't need to convert it (if you already have a converted copy)</p>
+<h1 id="getting-character-lists-for-font-files">Getting character lists for font files<a class="headerlink" href="#getting-character-lists-for-font-files" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">If you don't want to install Swift</p>
+<p>I've added a Python script in the <code>ui-editing-scripts\scripts\CharacterInfoExtraction\PythonTextExtractor\extract.py</code> which performs the same job, but I haven't tested it extensively, just used it once.</p>
+</div>
+<p>To make sure that the character sets you use have all the characters used by the games, use scripts in the <a href="https://github.com/07th-mod/ui-editing-scripts/tree/master/scripts/CharacterInfoExtraction">CharacterInfoExtraction</a> subfolder.</p>
+<p>More detailed info on each of the scripts will be below, but assuming you compiled all the swift programs there and put them in the working directory, you can get a list of all the characters used in the Japanese script like this: <code>cat pathToHigurashiDataFolder/StreamingAssets/Update/*.txt | ./HigurashiTextExtractor - j | ./UniqueCharacters - &gt; japaneseScriptCharsUsed.txt</code>.  Note that you can get all the games at once by using multiple wildcards, for example if you have all the Mac versions in a folder you can do all of them at once with <code>folder/Higurashi*.app/Contents/Resources/Data/StreamingAssets/Update/*.txt</code>.  Replace the <code>j</code> with <code>e</code> to get all the characters used in the English script.
+That's all you really need for the Japanese script (I recommend taking the kanji from that file and pasting them over the <code>msgothic_0_charset_Japanese.txt</code> in the scripts repo to make your final charset)</p>
+<p>For English, you'll need to collect a few more files, since the font behind <code>msgothic_2</code> will be used to display the game's menus, including the Japanese ones.  Collect all the text used in strings in asset files using <code>./AssetBundleStringExtractor pathToHigurashiDataFolder/*.assets | ./UniqueCharacters - &gt; assetBundleCharsUsed.txt</code>.  Then, clone <a href="https://github.com/07th-mod/higurashi-assembly">the DLL code repository</a> and cat all the <code>Assets.Scripts.UI.Tips/TipsData.cs</code> files along with <a href="https://github.com/07th-mod/higurashi-console-arcs/blob/master/tips.json">the console arcs tips JSON</a> together and run that through <code>./UniqueCharacters</code>.  Finally, you can <code>cat englishScriptCharsUsed.txt assetBundleCharsUsed.txt tipsCharsUsed.txt | ./UniqueCharacters - &gt; englishCharset.txt</code>.  Like with the Japanese, copy the kanji out of that and paste it over the kanji in the scripts repo's <code>msgothic_2_charset_OtherLang.txt</code>.  This is to preserve the extra characters which were added to make translation into other languages easier.</p>
+<h1 id="adding-font-support-for-a-new-language-chapters-1-8-only">Adding Font Support for a New Language (Chapters 1-8 ONLY)<a class="headerlink" href="#adding-font-support-for-a-new-language-chapters-1-8-only" title="Permanent link">&para;</a></h1>
+<p>The first thing you'll need is a <a href="https://unity3d.com/get-unity/download/archive">copy of Unity 5</a> (I used 5.5.5 but I would expect newer versions of Unity 5 to work as well).  Once you have that, create a new project, go to the Asset Store, and search for and download TextMeshPro.</p>
+<h3 id="preparing-the-character-list">Preparing the character list<a class="headerlink" href="#preparing-the-character-list" title="Permanent link">&para;</a></h3>
+<p>To make the font file, you will need a list of all the characters you want in it.  Annoyingly, some of the Japanese parts of the games still rely on the English font, so you'll need to have those characters in addition to the ones you use for your language's character support.  Download the current list from msgothic_2_charset_OtherLang.txt in <a href="https://github.com/07th-mod/ui-editing-scripts/tree/master/scripts/CharacterInfoExtraction">here</a>, which is the list of characters in the current English font.  If your language's characters are already in that file, you shouldn't need to be doing font file editing at all.  Otherwise, modify the text file to replace all the accented roman characters before the <code>←↑→↓</code> with all the characters you want in your font.  Don't remove the characters after that point, because they're required to properly display some things in Japanese mode.  Once you've done that, drag the new txt file into the Unity project you made.</p>
+<h3 id="preparing-the-font-file">Preparing the font file<a class="headerlink" href="#preparing-the-font-file" title="Permanent link">&para;</a></h3>
+<p>Since you'll need support for the Japanese characters in addition to your own language, you'll need to add them to your font file.  If your font file already has Japanese support (which may be the case for some Chinese or Korean fonts), you can skip this step.  Otherwise, download <a href="https://fontforge.github.io">FontForge</a> and one of the TTF fonts <a href="https://github.com/07th-mod/ui-editing-scripts/tree/master/assets/fonts">here</a>.  Open both the target font and the one you just downloaded using FontForge.  Navigate to <code>Element → Font Info</code> with both fonts, go to the <code>General</code> tab, and adjust the Em Size of one of the fonts to match the other (if you don't do this, one of the fonts will be way too small or big).  Then, select <code>Element → Merge Fonts...</code> in the window for the target font to copy all missing glyphs from the Japanese font over.
+In addition, some fonts (like our current English font) use really thin lines for the ☆ character, which Higurashi uses a lot.  Thin lines don't do very well with the font rendering system the game uses, which makes the character look really bad.  Navigate to the entry for ☆, which you can do easily by selecting <code>View → Goto</code> and typing <code>uni2606</code>, and check if your font uses really thin lines.  If it does, go to the Japanese font, go to the same spot, and copy and paste its ★ and ☆ over yours.
+Finally, export the new font to a ttf with <code>File → Generate Fonts...</code> and drag the font file into Unity.</p>
+<h3 id="generating-the-sdf-font">Generating the SDF font<a class="headerlink" href="#generating-the-sdf-font" title="Permanent link">&para;</a></h3>
+<p>In your Unity project, choose <code>Window → TextMeshPro → Font Asset Creator</code>. Select your font as the font source, which should be there if you dragged it into your Unity project.  For the font size, choose Custom Size.  The current fonts use 26pt, but you can choose whatever you like.  Bigger font sizes use more space but look nicer.  Change Font Padding to 6 pt.  If your characters almost fit in the atlas but not quite, you can change the packing method from Fast to Optimal to pack a few more characters in.</p>
+<p>For the Atlas Resolution, larger numbers take up more space but allow more or larger characters.  The current Japanese font contains about 3000 26pt Japanese characters and fits in 2048x2048, taking up 4MB.  For Character Set, choose Characters from file and choose the txt file you added earlier.  Leave Font Style at Normal/2 and change Font Render Mode to Distance Field 32 (Note: This is the slowest and highest quality.  If you're still trying to figure out what font/atlas sizes you need, I recommend first choosing Hinted Smooth, which will slightly underestimate the size of the characters but be super fast, then use Distance Field 16 which will get all the character sizes right while still being faster than Distance Field 32, before finally choosing Distance Field 32 for the one you save).</p>
+<p>Next, click Generate Font Atlas.  This will take a while for large atlases.  When it's done, it will say in the box if it was unable to fit any characters.  If the resulting atlas is completely full, this is probably because those characters didn't fit, in which case you should adjust your atlas size or font size.  Otherwise, this is because TextMeshPro failed to find those characters in your font.  If it's just some newline characters or spaces this is fine, just look through them to make sure it didn't miss any characters that you think you need.</p>
+<p>Once you've saved the font, use the Unity inspector to change its Line Height to be equal to its Point Size.  This is what MS Gothic uses, and a lot of the game's character spacing expects this to be the case.</p>
+<p>From here, follow the directions above for TMPAssetConverter to add your font to the game.</p>
+<h1 id="adding-font-support-for-a-new-language-higurashi-rei-onwards-only">Adding Font Support for a New Language (Higurashi Rei onwards ONLY)<a class="headerlink" href="#adding-font-support-for-a-new-language-higurashi-rei-onwards-only" title="Permanent link">&para;</a></h1>
+<p>For Rei, the method used for Chapters 1-8 doesn't work. For now, we have the following process.</p>
+<p>Please keep in mind the instructions are rough around the edges - please let us know if they don't make sense or need updating!</p>
+<p>Also, these instructions roughly <a href="https://snowyegret.tistory.com/m/21">follow this guide in Korean</a> (thanks to 이칠공), which you <a href="https://discord.com/channels/384426173821616128/750313515482480699/1013705389205897236">can translate</a>.</p>
+<h2 id="creating-the-font">Creating the font<a class="headerlink" href="#creating-the-font" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Install the version of Unity matching the game (roughly). For example, Rei is currently either verison <code>2019.4.36f1</code> or version <code>2019.4.40f1</code>, so we install version 2019.4.36 (generally the font generated on 2019.4.36 should work for all 2019.4.* versions). You can download them from the <a href="https://unity.com/releases/editor/archive">Unity Download Archive</a>.</li>
+<li>Create a new project</li>
+<li>Click Window-&gt;TextMeshPro-&gt;Font Asset Creator</li>
+<li>Follow the above "Adding Font Support for a New Language (Chapters 1-8 ONLY)" instructions to make a new font asset (starting from "Preparing the character list" up to and including "Generating the SDF font"), but <strong>DO NOT run TMPAssetConverter</strong>. As a summary:<ul>
+<li>Select the font file to use (In the UI repo, use <code>ui-editing-scripts/assets/fonts/DejaVuSans+MS-PGothic.ttf</code>)</li>
+<li>Set Atlas Resolution to:<ul>
+<li>For Rei (Ch.9), either use 2048 x 2048 (less sharp), or <strong>use 4096 x 4096 and also fix the font weight/outline</strong> (see below section)</li>
+<li>For Hou (Ch.10), use 4096 x 4096. No font weight/outline adjustment necessary</li>
+</ul>
+</li>
+<li>Copy our character list <a href="https://github.com/07th-mod/ui-editing-scripts/blob/master/scripts/CharacterInfoExtraction/msgothic_2_charset_OtherLang.txt">msgothic_2_charset_OtherLang.txt</a>, and check whether it contains the characters you need. If not, put in the characters you need.<ul>
+<li>NOTE: Since Hou uses only one font for both languages, if you wish to support Japanese, you must also add Japanese to your charset!</li>
+</ul>
+</li>
+<li>Set Character Set to "Custom Characters", then paste in the character list you generated or copied earlier.</li>
+<li>Click "Generate Font Atlas"</li>
+<li>Check if all the characters were included (for example it will say "Characters Included: 1975/1977"). Read the text output to see why the characters are missing (missing from font, or doesn't fit in atlas)</li>
+<li>If you're not sure, also refer to the <a href="https://discord.com/channels/384426173821616128/750313515482480699/1013705389205897236">translated Korean instructions</a></li>
+<li>MAKE SURE TO CHECK the SP/PD Ratio is about 10%, see "Square artifacting around characters" section below and https://dev.to/clpsplug/beware-of-padding-in-textmeshpro-8ae</li>
+</ul>
+</li>
+<li>Click Top Menu Bar "GameObject" -&gt; UI -&gt; Text - TextMeshPro</li>
+<li>On this created text object, change the font to the one you just generated. This makes sure the font is included in the final project, and also lets you preview how it looks.</li>
+<li>Optional: If it looks OK, regenerate the font with "Render Mode" set to SDF32 to improve the quality (note that this will take a long time)</li>
+<li>If the font ends up too big or too small, you can adjust the scaling by editing the <code>m_Scale</code> (on the font's MonoBehavior object, it is part of the FaceInfo section), without regenerating the font. The easiest way to tweak this is to produce a proper sharedassets0 (name it differently from the mod sharedassets though), then edit it directly using UABE using the 'View Data' button. Then click File-&gt;Apply and Save All and overwrite the mod's sharedassets0. This is necessary for Hou+ as some of the UI buttons have a font size which I don't know how to change. For example, I have used a scaling factor of <strong>0.85</strong> to match the vanilla font. </li>
+<li>If the font ends up with too thin outline / the font weight is too small, see below section on fixing the font weight/outline (for Rei).</li>
+</ol>
+<h3 id="square-artifacting-around-characters-if-glyphs-are-too-high-resolution">Square artifacting around characters if glyphs are too high resolution<a class="headerlink" href="#square-artifacting-around-characters-if-glyphs-are-too-high-resolution" title="Permanent link">&para;</a></h3>
+<p>You might see a grey box around letters (perhaps only when the font weight or outline is adjusted).</p>
+<p>See this aricle: https://dev.to/clpsplug/beware-of-padding-in-textmeshpro-8ae (https://web.archive.org/web/20231203120842/https://dev.to/clpsplug/beware-of-padding-in-textmeshpro-8ae)</p>
+<p>This might also be unnoticeable using the normal font settings, but become a problem when you try to adjust the outline/font weight in-game.</p>
+<h3 id="fixing-font-weight-outline">Fixing font weight / outline<a class="headerlink" href="#fixing-font-weight-outline" title="Permanent link">&para;</a></h3>
+<p>I found that when editing the fonts for Rei, which use 2048x2048 texture size in the vanilla game, if you use 4096x4096 texture size, it would cause fonts to be very thin.</p>
+<p>It may be possible to fix these issues via the DLL in the future, but I'm recording how I fixed it by editing the font material, as this works for now.</p>
+<p>It looks like you can work around these issues by modifying the material used for the fonts.</p>
+<h4 id="use-already-fixed-material">Use already fixed material<a class="headerlink" href="#use-already-fixed-material" title="Permanent link">&para;</a></h4>
+<p>Firstly, just try using this already fixed material for Rei:</p>
+<p><Insert material used for font ></p>
+<h4 id="modify-the-normal-font-weight">Modify the 'normal' font weight<a class="headerlink" href="#modify-the-normal-font-weight" title="Permanent link">&para;</a></h4>
+<p>If the font is too thin, you can manually change the 'default' font weight by editing the "_WeightNormal" parameter. This defaults to 0, but you can change it to .75 to make it thicker:</p>
+<div class="highlight"><pre><span></span><code>// In the font&#39;s material when dumped as .txt:
+
+[50]
+    0 pair data
+    1 string first = &quot;_WeightNormal&quot;
+    0 float second = 0.75
+</code></pre></div>
+<h4 id="modify-the-outline-not-working">Modify the outline (not working?)<a class="headerlink" href="#modify-the-outline-not-working" title="Permanent link">&para;</a></h4>
+<p>I'm not sure if the engine modifies this value. Some more testing needed. But you can try to modify the outline width by changing the "_OutlineWidth" parameter:</p>
+<div class="highlight"><pre><span></span><code>// In the font&#39;s material when dumped as .txt:
+
+[25]
+    0 pair data
+    1 string first = &quot;_OutlineWidth&quot;
+    0 float second = 0.200000003
+</code></pre></div>
+<p>This directly corresponds to the "Thickness" slider in the "Outline" section, when you're changing the settings for some text in Unity.</p>
+<h4 id="hou-plus-note">Hou Plus Note<a class="headerlink" href="#hou-plus-note" title="Permanent link">&para;</a></h4>
+<p>Hou Plus already uses 4096x4096, so you don't need to make the above changes, assuming you generated your font with atlas resolution 4096 x 4096 earlier.</p>
+<h2 id="extracting-fonts-from-the-built-game">Extracting fonts from the built game<a class="headerlink" href="#extracting-fonts-from-the-built-game" title="Permanent link">&para;</a></h2>
+<h3 id="building-the-game-and-opening-it-in-uabe">Building the game and opening it in UABE<a class="headerlink" href="#building-the-game-and-opening-it-in-uabe" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Build/export the project to a known location</li>
+<li>Install the latest version of UABE <a href="https://github.com/SeriousCache/UABE">from the UABE repository</a></li>
+<li>Open ALL files (both the no extension and extension versions) of <code>globalgamemanagers</code>, <code>level0</code>, <code>resources</code>, and <code>sharedassets0</code> from the built game using UABE<ul>
+<li><strong>Open it straight from the game directory! don't copy it somewhere else, as UABE will read some information from the game I think</strong></li>
+</ul>
+</li>
+<li>If a popup appears, select the closest unity version to the version you just exported the dummy game with</li>
+</ol>
+<h3 id="getting-the-texture-atlas-png">Getting the texture atlas .png<a class="headerlink" href="#getting-the-texture-atlas-png" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Find the SDF atlas file, called <code>[FONT NAME] SDF Atlas</code> in the file browser, of type Texture2D (my example was "Binggrae SDF Atlas")</li>
+<li>Click on that item to select it</li>
+<li>Click "Plugins" on the right</li>
+<li>Click "export to .png", press  OK and save it somewhere. Rename it to something you can remember like <code>FONT_NAME_sdf_atlas.png</code></li>
+</ol>
+<h3 id="getting-the-monobehavior">Getting the monobehavior<a class="headerlink" href="#getting-the-monobehavior" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Repeat the above, but find the file called "MonoBehaviour [FONT NAME] SDF"</li>
+<li>Click "View Info"</li>
+<li>You should get a popup saying that you need to extract class information, say yes.</li>
+<li>A popup will apepar asking for a <code>UnityEngine.TestRunner.dll</code>, but you can ignore it, just press 'Cancel'</li>
+<li>Click "Export Dump"-&gt;Dump as text file</li>
+<li>If a popup appears asking to 'extract extra information', <strong>click Yes</strong>. If another popup appears asking to select a file, <strong>click cancel</strong>. For some reason, even if you click cancel, you'll get the detailed dump.</li>
+<li>Save the text file with a memorable name like <code>FONT_NAME_monobehavior_sdf.txt</code><ul>
+<li>NOTE: if you only get a small 1kb file with no data, likely UABE did not extract extra info from the game. Make sure you loaded ALL files earlier and also clicked "View Info" earlier before exporting dump.</li>
+</ul>
+</li>
+</ol>
+<h2 id="merging-monobehaviors">Merging Monobehaviors<a class="headerlink" href="#merging-monobehaviors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Repeat "Getting the monobehavior", but this time do it on the game to be modded. In Rei, you're looking for a file called "MonoBehaviour msgothic_2 SDF".</li>
+<li>Open the unmodded game's <code>MonoBehaviour msgothic_2 SDF</code> in one text editor (It's suggested you use Visual Studio Code)</li>
+<li>Open the exported game's <code>[FONT NAME] SDF Atlas</code> (<code>MonoBehaviour Binggrae_2 SDF</code> for example) in another text editor window/tab/panel<ul>
+<li>In Visual Studio Code, dragging the second file to the right hand side of the window will open it side-by-side</li>
+</ul>
+</li>
+<li>Delete everything below and including the <code>0 FaceInfo m_FaceInfo</code> line</li>
+<li>Copy everything below and including the dummy game's  0 FaceInfo m_FaceInfo line into the game's YAML file<ul>
+<li>The above korean instructions state you may need to manually adjust it, but it seems to work even if you just copy everything in the YAML file after  the 0 FaceInfo m_FaceInfo line</li>
+</ul>
+</li>
+</ol>
+<p>Basically, you just open the two files side by side, then copy everything below <code>0 FaceInfo m_FaceInfo</code> into the other file at the corresponding location.</p>
+<h2 id="extracting-files-for-our-scripts">Extracting files for our scripts<a class="headerlink" href="#extracting-files-for-our-scripts" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open the game's sharedassets.assets file again in UABE</li>
+<li>Find and select the SDF atlas called "msgothic_2 SDF Atlas"</li>
+<li>click plugins</li>
+<li>click "edit texture"</li>
+<li>Select the .png file you extracted earlier.</li>
+<li>Click "Export Raw", and save it as your final atlas .dat (?? hopefully you can do it without saving??)</li>
+<li>Find and select the "MonoBehaviour msgothic_2 SDF"</li>
+<li>Click "Import Dump"</li>
+<li>Choose the merged YAML file you created earlier</li>
+<li>Click "Export Raw", and save it as your final monobehavior .dat (?? hopefully you can do it without saving??)</li>
+</ol>
+<h2 id="renamingmoving-file-so-our-script-ui-editing-scripts-can-use-it">Renaming/moving file so our script ui-editing-scripts can use it<a class="headerlink" href="#renamingmoving-file-so-our-script-ui-editing-scripts-can-use-it" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Put both the .dat files in the <code>assets\files-2019.4</code> folder (or in the future, one matching your unity version)</li>
+<li>Rename the texture atlas as <code>msgothic_2 SDF Atlas_Texture2D.dat</code> to make the script replace by name and type(or use the "replace by Path ID" method?)</li>
+<li>Rename the monobehavior as <code>948_MonoBehaviour msgothic_2 SDF.dat</code> to replace the asset with PathID #948</li>
+</ol>
+<p>Once this part is done, the fonts will be automatically included in the output .assets</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      All Nipahs Reserved
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
