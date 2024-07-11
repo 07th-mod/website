@@ -1,0 +1,31 @@
+name: Build wiki
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Every 30 minutes...
+  workflow_dispatch: # ... or when we manually click the "dispatch" button
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull, build and push wiki
+        run: |
+          git clone https://github.com/07th-mod/wiki wiki-src
+          cd wiki-src
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material mkdocs-minify-plugin pymdown-extensions
+          mkdocs build
+          rm -rf ../wiki
+          mv wiki ..
+          cd ..
+          git config user.name '07th-Mod Wiki'
+          git config user.email 'noreply@07th-mod.com'
+          git add wiki
+          git commit -m 'Update wiki' --allow-empty
+          git push
+        env:
+          GH_TOKEN: ${{ github.token }}
